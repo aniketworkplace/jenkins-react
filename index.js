@@ -1,9 +1,9 @@
 import express from "express";
 const app = express();
 
-app.use(express.static("build"));
+app.use(express.static("dist"));
 app.get("*", (req, res) => {
-  res.send("build/index.html");
+  res.sendFile("dist/index.html");
 });
 
 app.listen(5000, () => {
