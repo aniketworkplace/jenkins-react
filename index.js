@@ -6,6 +6,6 @@ app.get("*", (req, res) => {
   res.sendFile("dist/index.html");
 });
 
-app.listen(5000, () => {
+app.listen(4000, () => {
   console.log("server started");
 });
